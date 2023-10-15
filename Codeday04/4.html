@@ -1,0 +1,28 @@
+<!-- 交集选择器 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>交集选择器</title>
+    <style>
+        /* 选中同时满足多个条件的标签 */
+        /* 选择器1选择器2.。。中间没有符号，连写 */
+        /* 标签选择器放在第一个 */
+        p.red {
+            font-size: 30px;
+            color: red;
+        }
+        div#blue {
+            font-size: 40px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p>我没有red</p>
+    <p class="red">我有red</p>
+    <div>我没有blue</div>
+    <div id="blue">我有blue</div>
+</body>
+</html>

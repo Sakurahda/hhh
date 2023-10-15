@@ -1,0 +1,30 @@
+<!-- CSS特性————优先级 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS特性————优先级</title>
+    <style>
+        /* 基础选择器 */
+        /* 范围越小，优先级越大 */
+        /* 复合选择器，叠加计算，就是谁多，继承权重最低*/
+        /* 在属性后面加 !important，直接优先级拉满 */
+        div {
+            color: red;
+        }
+        * {
+            color: green;
+        }
+        .box {
+            color: blue;
+        }
+        #gold {
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="gold" style="color: aqua;">我是沙</div>
+</body>
+</html>

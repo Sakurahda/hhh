@@ -1,0 +1,32 @@
+<!-- 伪元素选择器 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪元素选择器</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+        }
+        /* 伪元素，虚拟元素，装饰作用 */
+        /* 必须加content，否则不生效 */
+        /* 格式E::before E::after */
+        /* 创造出来的为行内元素 无法加宽高 */
+        div::before {
+            width: 200px;
+            height: 400px;
+            background-color: hotpink;
+            content:"逢考必";
+        }
+        div::after {
+            content: ",好运连连";
+        }
+    </style>
+</head>
+<body>
+    <div>过</div>
+</body>
+</html>

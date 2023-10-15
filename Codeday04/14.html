@@ -1,0 +1,26 @@
+<!-- 背景图缩放 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 500px;
+            height: 300px;
+            background-color: blueviolet;
+            background-image: url(./images/1.png);
+            background-repeat: no-repeat;
+            /* 关键词写法 cover，把背景区完全盖住 contain，长或者宽到了停止缩放 */
+            /* background-size: contain; */
+            /* background-size: cover; */
+            /* 百分比写法，按盒子的大小*百分比 */
+            background-size: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div>helllo</div>
+</body>
+</html>

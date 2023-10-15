@@ -1,0 +1,22 @@
+<!-- 行内元素的垂直内外边距 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            /* 行内元素无法通过padding和margin改变内外行间距 */
+            padding: 20px;
+            margin: 50px;
+            /* 但是可以通过调整行高来改变 */
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <span>hhh</span>
+    <span>jjj</span>
+</body>
+</html>

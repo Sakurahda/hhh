@@ -1,0 +1,51 @@
+<!-- 转换显示模式 -->
+<!-- 利用display：有三个元素block 块级 inline-block 行内块 inline 行内 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            display: inline;
+        }
+        .div1 {
+            background-color: yellowgreen;
+        }
+        .div2 {
+            background-color: brown;
+        }
+        span {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+        .span1 {
+            background-color: aqua;
+        }
+        .span2 {
+            background-color:saddlebrown;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 块级元素  独占一行宽默认为父级100% 设置宽高后改变 -->
+    <div class="div1">div1</div>
+    <div class="div2">div2</div>
+    <!-- 行内元素 一行共存多个 尺寸由内容撑开 加宽高不生效  -->
+    <span class="span1">span1</span>
+    <span class="span2">span2</span>
+    <!-- 行内块元素 不换行 尺寸由内容撑开 加宽高生效 -->
+    <img src="./images/1.png" alt="">
+    <img src="./images/1.png" alt="">
+</body>
+</html>

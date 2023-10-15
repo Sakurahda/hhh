@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>banner效果</title>
+    <style>
+        .box {
+            /* div的宽度（自适应） 高度 */
+            height: 500px;
+            /* 背景图片，颜色，不平铺 左 底*/
+            background: #f3f3f4 url(../images/bk.png) no-repeat left bottom;
+            /* 行内块元素 全部靠右*/
+            text-align: right;
+        }
+        .box h2 {
+            /* 字体大小 颜色 行高 不加粗（400）*/
+            font-size: 36px;
+            color: #333;
+            line-height: 100px;
+            font-weight: 400;
+        }
+        .box p {
+            /* 字体大小 颜色 */
+            font-size: 20px;
+            color: #333;
+        }
+        .box a {
+            /* 转为行内元素块元素，因为需要长宽背景行高 */
+            display: inline-block;
+            /* 设置背景颜色 高 宽 */
+            background-color: #f06b1f;
+            height: 40px;
+            width: 125px;
+            /* 设置字体大小 颜色 行高+居中=居中 去除下划线*/
+            font-size: 20px;
+            color: #ffffff;
+            line-height: 40px;
+            text-align: center;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- 利用div装下背景图，段落，标题，超链接等 -->
+    <div class="box">
+        <h2>让创造产生价值</h2>
+        <p>我们希望小游戏平台可以提供无限的可能性，让每一个创作者都可以将他们的才华和创意传递给用户。</p>
+        <a href="https://www.bilibili.com/" target="_blank">我要报名</a>
+    </div>
+</body>
+</html>

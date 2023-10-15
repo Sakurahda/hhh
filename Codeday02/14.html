@@ -1,0 +1,17 @@
+<!-- label标签——增大点击范围 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 一个单选框，利用label实现点文字也可以选中 -->
+    性别：
+    <!-- 写法一，label只包裹内容，for属性与id属性相同 -->
+    <input type="radio" name="gender" id="man"> <label for="man">男</label>
+    <!-- 写法二，label直接包裹表单控件和内容，不需要属性 -->
+    <label><input type="radio" name="gender" id="girl"> 女 </label>
+</body>
+</html>

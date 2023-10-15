@@ -1,0 +1,30 @@
+<!-- 标准流----标签的默认排列方式 -->
+<!-- 浮动---让块元素水平排列 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one {
+            height: 100px;
+            width: 100px;
+            background-color: brown;
+            /* float:left/right; 让块元素在同一行显示 左右对齐 两个都得加 具有行内块特点*/
+            /* 一个加了 相当于脱离了标准流的范围 不占用标准流位置 */
+            float: left;
+        }
+        .two {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">one</div>
+    <div class="two">two</div>
+</body>
+</html>

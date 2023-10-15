@@ -1,0 +1,27 @@
+<!-- 类选择器 差异化设置标签的显示效果 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 定义类选择器 .+类名*/
+        .red-30px {
+            color: red;
+            font-size: 30px;
+        }
+        .green {
+            color: green;
+            font-size: 80px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 使用类选择器，class="类名" -->
+    <!-- 一个选择器可以给多个标签使用 --> 
+    <!-- class+"类 类 类"，一个标签可以使用多个类选择器，后面的覆盖前面的 -->
+    <p class="red-30px green">坚持学单纯的小孩</p>
+    <p>静静看守这份爱</p>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!-- 复合选择器————后代选择器 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合选择器</title>
+    <style>
+        /* 后代选择器，选择某元素的后代元素，子类，子子类都行 */
+        /* 父 子 {CSS属性} */
+        div span {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <span>测试</span>
+    <div>
+        <span>div中的span</span>
+        <p>测试</p>
+        <p>
+            <span>p中的span</span>
+        </p>
+    </div>
+</body>
+</html>

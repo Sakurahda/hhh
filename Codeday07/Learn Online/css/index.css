@@ -1,0 +1,53 @@
+/* 版心居中 */
+.wrapper {
+    margin: 0 auto;
+    width: 1200px;
+}
+body {
+    background-color: #f3f5f7;
+}
+.header {
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+}
+.header .wrapper {
+    padding-top: 29px;
+    display: flex;
+
+}
+.logo a {
+    display: block;
+    width: 195px;
+    height: 41px;
+    background-image: url(../images/logo.png);
+    /* 隐藏文字 */
+    font-size: 0;
+}
+.nav {
+    padding-left: 102px;
+}
+.nav ul {
+    display: flex;
+}
+.nav li {
+    margin-right: 24px;
+}
+.nav li a {
+    display: block;
+    padding:6px 8px;
+    line-height: 27px;
+    font-size: 19px;
+}
+.nav li .active,
+.nav li a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+.search {
+    margin-left: ;
+    width: 412px;
+    height: 40px;
+    background-color: #f3f5f7;
+    border-radius: 20px;
+}
+

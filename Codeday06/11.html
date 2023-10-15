@@ -1,0 +1,42 @@
+<!-- flex布局 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 弹性容器 */
+        .box {
+            /* 使用flex布局 */
+            display: flex;
+            /* 沿着侧轴线拉伸,前提:在侧轴方向没有尺寸 */
+            /* align-items: stretch; */
+            /* 沿着侧轴方向居中排列 */
+            align-items: center;
+            /* flex-start flex-end 沿着起点和终点开始依次排列 */
+            height: 300px;
+            border: 1px solid #000;
+        }
+        /* 控制某一个弹性盒子 */
+        .box div:nth-child(2) {
+            align-self: flex-end;
+        }
+        /* 弹性盒子 沿着主轴方向排列 */
+        .box div {
+            width: 200px;
+            /* 没有高，默认与弹性容器一致 */
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <!-- 会自动挤压拉伸 -->
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

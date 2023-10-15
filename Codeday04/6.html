@@ -1,0 +1,33 @@
+<!-- 伪类————超链接 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类————超链接</title>
+    <style>
+        /* 每个都设置的话，按lvha顺序 */
+        /* 工作中，一般用a把所有状态都设置成一种颜色 */
+        /* 然后利用hover设置悬停时后的颜色 */
+        a:link {
+            /* 点击前 */
+            color: red;
+        }
+        a:visited {
+            /* 访问后 */
+            color: green;
+        }
+        a:hover {
+            /* 悬停时 */
+            color: blue;
+        }
+        a:active{
+            /* 点击后 */
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.bilibili.com/" target="_blank">测试测试测试</a>
+</body>
+</html>

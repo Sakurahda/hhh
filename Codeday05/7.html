@@ -1,0 +1,25 @@
+<!-- 盒子模型--尺寸计算 -->
+<!-- 默认 盒子尺寸=内容尺寸+boder尺寸+内边距尺寸 -->
+<!-- 所以添加内边距 边框等会撑大盒子 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            /* 在w200+h200的情况下，若要避免被撑大，可以手动减小w和h，改成160 */
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            padding: 20px;
+            /* 内减模式：不需要手动做减法，加padding和bordr不会撑大 */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div>好久没见了</div>
+</body>
+</html>

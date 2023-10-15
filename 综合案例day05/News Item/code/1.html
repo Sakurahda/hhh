@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            /* 清空默认样式 */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        li {
+            /* 去掉无序列表的点 */
+            list-style: none;
+        }
+        a {
+            /* 去掉超链接的下划线 */
+            text-decoration: none;
+        }
+        .box {
+            margin: 100px auto;
+            width: 360px;
+            height: 200px;
+        }
+        .next {
+            /* 用div把第一行抱起来 */
+            height: 34px;
+            /* 背景色 */
+            background-color: #eee;
+            /* 边框线颜色 */
+            border:1px solid #dbdee1;
+            /* 去除左边的边框线 */
+            border-left: 0;
+        }
+        .next a {
+            /* 盒子向上移动 */
+            margin-top: -1px;
+            /* 转成块元素 */
+            display: block;
+            border-top: 3px solid #ff8400;
+            border-right:1px solid #dbdee1;
+            width: 48px;
+            height: 34px;
+            background-color: #fff;
+            text-align: center;
+            line-height: 32px;
+            color: #333;
+            font-size: 14px;
+        }
+        .last {
+            padding: 5px;
+        }
+        .box .last li {
+            /* 把点作为li的背景图 */
+            background-image: url(../image/square.png);
+            /* 关闭平铺 */
+            background-repeat: no-repeat;
+            /* 垂直居中 */
+            background-position: 0 center;
+            /* 设置li的内边距 */
+            padding-left: 15px;
+        }
+        .box .last li a {
+            /* 把图片作为a的背景 装饰性图片 */
+            background: url(../image/img.gif) no-repeat 0 center;
+            padding-left: 20px;
+            /* 文字样式 */
+            color: #666;
+            font-size: 12px;
+            line-height: 24px;
+        }
+        .box .last li a:hover {
+            /* 设置悬停状态 */
+            color: #ff8400;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="next">
+            <a href="">新闻</a>
+        </div>
+        <div class="last">
+            <ul>
+                <li><a href="https://www.bilibili.com/">点赞“新农人” 温暖的伸手</a></li>
+                <li><a href="https://www.bilibili.com/">在希望的田野上...</a></li>
+                <li><a href="https://www.bilibili.com/">“中国天眼”又有新发现 已在《自然》杂志发表</a></li>
+                <li><a href="https://www.bilibili.com/">急！这个领域，缺人！月薪4万元还不好招！啥情况？</a></li>
+                <li><a href="https://www.bilibili.com/">G9“带货”背后：亏损面持续扩大，竞争环境激烈</a></li>
+                <li><a href="https://www.bilibili.com/">多地力推二手房“带押过户”，有什么好处？</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
